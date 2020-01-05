@@ -1,28 +1,26 @@
 import re
 from setuptools import setup
 
-
 version = re.search(
     '^__version__\s*=\s*"(.*)"',
-    open('bootstrap/bootstrap.py').read(),
+    open('makeReact/script.py').read(),
     re.M
     ).group(1)
 
 
-with open("README.rst", "rb") as f:
-    long_descr = f.read().decode("utf-8")
-
+with open("README.md", "r") as f:
+    long_description = f.read()
 
 setup(
-    name = "cmdline-bootstrap",
-    packages = ["bootstrap"],
+    name = "makeReact",
+    packages = ["makeReact"],
     entry_points = {
-        "console_scripts": ['bootstrap = bootstrap.bootstrap:main']
+        "console_scripts": ['makeReact = makeReact.script:main']
         },
     version = version,
-    description = "Python command line application bare bones template.",
-    long_description = long_descr,
-    author = "Jan-Philip Gehrcke",
-    author_email = "jgehrcke@googlemail.com",
-    url = "http://gehrcke.de/2014/02/distributing-a-python-command-line-application",
+    description = "makeReact is a python package which helps react and react-native developer to speed-up their develoment process.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author = "Hur Ali",
+    author_email = "hurali97@gmail.com",
     )

@@ -26,8 +26,7 @@ Note:
 
 Example:
 ```sh
-makeReact -path=C:/Users/Hur/MyReactProject/src -c=True -n=MyComponent 
--r=True
+makeReact -path=C:/Users/Hur/MyReactProject/src -c=True -n=MyComponent -r=True
 ```
 
 License
