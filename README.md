@@ -3,7 +3,8 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-makeReact is a python package which helps react and react-native developer to speed-up their develoment process.
+makeReact is a python package which helps react and react-native developer to speed-up their develoment process. It saves our time of creating new components or screens and writing the bare minimum amount of code every time. So here is a python package with which we can create our components right from the terminal into the projects directory, all that ease is just a pip install away.
+
 
 
 > pip install makeReact
